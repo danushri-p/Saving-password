@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Other page</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Other Page</title>
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js" defer></script>
   </head>
   <body>
     <nav>
-      <a href="/">Home</a>
-      <a href="/page2.html" aria-current="page">Other page</a>
+      <a href="/" aria-label="Go to Home">Home</a>
+      <a href="/page2.html" aria-current="page" aria-label="Go to Other Page">Other page</a>
     </nav>
     <main>
-      <h1>My other page</h1>
+      <h1>My Other Page</h1>
+      <p>Welcome to another page on the site.</p>
+      <p id="countDisplay">Count: 0</p>
     </main>
   </body>
 </html>
